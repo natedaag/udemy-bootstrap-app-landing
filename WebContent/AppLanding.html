@@ -15,6 +15,7 @@
     	.jumbotron{
     		background-image: url("FullGoldBar.png");
     		text-align:center;
+    		margin-top:50px;
     	}
     	#email{
     		width:300px;
@@ -27,17 +28,30 @@
     	.card-img-top{
     		width:100%;
     	}
+    	#playStoreIcon{
+    		width:200px;
+    	}
+    	#footer{
+    		background-color:gold;
+    		padding-top:125px;
+    		padding-bottom:125px;  		
+    		margin-top:50px;
+    		text-align:center;  
+    	}
+    	body{
+    		position:relative;
+    	}
     
     </style>
   </head>
-<body>
-	<nav class="navbar navbar-light bg-faded">
+<body data-spy="scroll" data-target="#navbar" data-offset="150">
+	<nav class="navbar navbar-light bg-faded navbar-fixed-top" id="navbar">
 		<a class="navbar-brand" href="#">Winning!</a>
 		<ul class="nav navbar-nav">
-			<li class="nav-item active"><a class="nav-link"
-				href="#jumbotron">Home <span class="sr-only">(current)</span></a></li>
-			<li class="nav-item"><a class="nav-link" href="#">About </a></li>
-			<li class="nav-item"><a class="nav-link" href="#">Download
+			<li class="nav-item">
+			<a class="nav-link" href="#jumbotron">Home <span class="sr-only">(current)</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#about">About </a></li>
+			<li class="nav-item"><a class="nav-link" href="#footer">Download
 					Winning!</a></li>
 		</ul>
 		<form class="form-inline pull-xs-right">
@@ -48,7 +62,7 @@
 		</form>
 	</nav>
 
-	<div class="jumbotron">
+	<div class="jumbotron" id="jumbotron">
 		<h1 class="display-3">WINNING!</h1>
 		<p class="lead">This is a simple app, but one that can bring you a
 			world of WINNING! It uses a proprietary algrorithm to select hot and
@@ -77,45 +91,54 @@
 		</div>
 	</div>
 
-	<div class="container">
-		<div class="card-deck">
-			<div class="card">
-				<img class="card-img-top" src="CashInHand.jpg" alt="Card image cap">
-				<div class="card-block">
-					<h4 class="card-title"><i class="fa fa-money"></i>Card title</h4>
-					<p class="card-text">This is a longer card with supporting text
-						below as a natural lead-in to additional content. This content is
-						a little bit longer.</p>
-					<p class="card-text">
-						<small class="text-muted">Last updated 3 mins ago</small>
-					</p>
+	<div class="container" id="about">
+		<div class="card-deck-wrapper">
+			<div class="card-deck">
+				<div class="card">
+					<img class="card-img-top" src="CashInHand.jpg" alt="Card image cap">
+					<div class="card-block">
+						<h4 class="card-title"><i class="fa fa-money"></i>Card title</h4>
+						<p class="card-text">This is a longer card with supporting text
+							below as a natural lead-in to additional content. This content is
+							a little bit longer.</p>
+						<p class="card-text">
+							<small class="text-muted">Last updated 3 mins ago</small>
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top" src="CashInHand.jpg" alt="Card image cap">
+					<div class="card-block">
+						<h4 class="card-title"><i class="fa fa-usd" aria-hidden="true"></i>Card title</h4>
+						<p class="card-text">This card has supporting text below as a
+							natural lead-in to additional content.</p>
+						<p class="card-text">
+							<small class="text-muted">Last updated 3 mins ago</small>
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top" src="CashInHand.jpg" alt="Card image cap">
+					<div class="card-block">
+						<h4 class="card-title"><i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+						Card title</h4>
+						<p class="card-text">This is a wider card with supporting text
+							below as a natural lead-in to additional content. This card has
+							even longer content than the first to show that equal height
+							action.</p>
+						<p class="card-text">
+							<small class="text-muted">Last updated 3 mins ago</small>
+						</p>
+					</div>
 				</div>
 			</div>
-			<div class="card">
-				<img class="card-img-top" src="CashInHand.jpg" alt="Card image cap">
-				<div class="card-block">
-					<h4 class="card-title"><i class="fa fa-usd" aria-hidden="true"></i>Card title</h4>
-					<p class="card-text">This card has supporting text below as a
-						natural lead-in to additional content.</p>
-					<p class="card-text">
-						<small class="text-muted">Last updated 3 mins ago</small>
-					</p>
-				</div>
-			</div>
-			<div class="card">
-				<img class="card-img-top" src="CashInHand.jpg" alt="Card image cap">
-				<div class="card-block">
-					<h4 class="card-title"><i class="fa fa-cc-mastercard" aria-hidden="true"></i>
-					Card title</h4>
-					<p class="card-text">This is a wider card with supporting text
-						below as a natural lead-in to additional content. This card has
-						even longer content than the first to show that equal height
-						action.</p>
-					<p class="card-text">
-						<small class="text-muted">Last updated 3 mins ago</small>
-					</p>
-				</div>
-			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="row">
+			<h2>Download the app!</h2>
+		<p class="lead">Really Why should  download this app?</p>
+		<p><a href=""><img id="playStoreIcon" src="GooglePlay.png"></a></p>
 		</div>
 	</div>
 	
